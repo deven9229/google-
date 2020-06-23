@@ -1,6 +1,80 @@
-.ulfirst {
-  text-decoration: none;
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
-.ulsecond {
-  text-decoration: none;
+
+/* Navbar section */
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail image sign-in";
 }
+
+a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Main section */
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+}
+#search {
+    grid-area: search;
+    height: 25px;
+    align-self: center;
+}
+#flexbox{
+    grid-area: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+/* footer */
